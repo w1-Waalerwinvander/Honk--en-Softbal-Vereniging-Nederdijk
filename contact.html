@@ -19,13 +19,30 @@
     <li>Contact</li>
 </ul>
 <h1>Contact</h1>
+<main>
 <form method="post" action="mailer.php">
-    <label>Heer</label><input type="radio" name="aanhef" value="M"><label>Mevrouw</label><input type="radio" name="aanhef" value="F">
-    <label>Naam:</label><input type="text">
-    <label>Email:</label><input type="email">
-    <label>Telefoonnummer:</label><input type="tel">
-    <label>Vraag/ opmerking:</label><textarea draggable="false">
+    <table>
+        <tbody>
+            <tr>
+                <td><label for="aanhefM">Heer</label><input type="radio" name="aanhef" value="M" id="aanhefM"></td><td><label  for="aanhefF">label>Mevrouw</label><input type="radio" name="aanhef" value="F" id="aanhefF">
+                    <label for="naam">Naam:</label><input type="text" name="naam" id="naam"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td><td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="telefoon">Telefoonnummer:</label></td><td><input type="tel" name="telefoon" id="telefoon"></td>
+            </tr>
+            <tr>
+                <td><label for="vraagOpmerking">Vraag/ opmerking:</label></td><td><textarea draggable="false" name="vraagOpmerking" id="vraagOpmerking"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="nieuwsbrief">Inschrijven voor nieuwsbrief:</label></td><td><input type="checkbox" name="nieuwsbrief" id="nieuwsbrief"></td>
+            </tr>
+        </tbody>
+    </table>
 </form>
-<footer>Dit is de footer</footer>
+</main>
+<footer></footer>
 </body>
 </html>
