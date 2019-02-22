@@ -8,7 +8,13 @@ if (isset($_POST["submit"])) {
     $email=$_POST["email"];
     $telefoon=$_POST["telefoon"];
     $vraagOpmerking=$_POST["vraagOpmerking"];
-    $nieuwsbrief=$_POST["nieuwsbrief"];
+    
+    if(isset($_POST["nieuwsbrief")){
+        $nieuwsbrief= "Ja";
+    }
+    else{
+        $nieuwsbrief= "Nee";
+    }
     $mailBody="
     <!html DOCTYPE>
     <html width=\"100%\">

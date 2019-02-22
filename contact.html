@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>
-            Honk en sofbalvereniging
+    <head>
+        <title>
+            HSV Nederdijk
         </title>
-        <link href="Stylesheet.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="style/Stylesheet.css">
         <meta name="description" content="Template HTML voor opdrachten">
         <meta name="keywords" content="template, HTML">
         <meta charset="UTF-8">
-</head>
+    </head>
 <body>
-<img src="HSV_logo_transparent.png">
-<ul>
-    <li>Home</li>
-    <li>Team</li>
-    <li>Nieuws</li>
-    <li>Loterij</li>
-    <li>Contact</li>
-</ul>
-<h1>Contact</h1>
-<main>
+    <div class="header">
+        <div class="menu-header">
+            <img src="images/HSV_logo_transparent.png" id="logo">
+            <ul id="menu">
+                <li>Home</li>
+                <li>Team</li>
+                <li>Nieuws</li>
+                <li>Loterij</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
 <form method="post" action="mailer.php">
     <table>
         <tbody>
             <tr>
-                <td><label for="aanhefM">Heer</label><input type="radio" name="aanhef" value="M" id="aanhefM"></td><td><label  for="aanhefF">label>Mevrouw</label><input type="radio" name="aanhef" value="F" id="aanhefF">
+                <td><label for="aanhefM">Heer</label><input type="radio" name="aanhef" value="M" id="aanhefM"></td><td><label  for="aanhefF"><label>Mevrouw</label><input type="radio" name="aanhef" value="F" id="aanhefF">
                     <label for="naam">Naam:</label><input type="text" name="naam" id="naam"></td>
             </tr>
             <tr>
@@ -37,12 +40,11 @@
                 <td><label for="vraagOpmerking">Vraag/ opmerking:</label></td><td><textarea draggable="false" name="vraagOpmerking" id="vraagOpmerking"></textarea></td>
             </tr>
             <tr>
-                <td><label for="nieuwsbrief">Inschrijven voor nieuwsbrief:</label></td><td><input type="checkbox" name="nieuwsbrief" id="nieuwsbrief"></td>
+                <td><label for="nieuwsbrief">Inschrijven voor nieuwsbrief:</label></td><td><input type="checkbox" name="nieuwsbrief" id="nieuwsbrief" value="T"></td>
             </tr>
         </tbody>
     </table>
 </form>
-</main>
 <footer></footer>
 </body>
 </html>
