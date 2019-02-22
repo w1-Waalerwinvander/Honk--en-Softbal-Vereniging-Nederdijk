@@ -1,19 +1,31 @@
-backgroud-color
+body
 {
     color: #343434;
 }
-img
+
+#logo
 {
     height: 100px;
     width: 100px;
     margin-left: 50%;
-
-
 }
+
+/* Header design */
 header
 {
     color: #ffc045;
-    height: 100xp;
+    height: 100px;
     width: 100%;
     display: inline-block;
+}
+
+/* Main Menu Positioning */
+.menu {
+    text-align: center;
+}
+
+.menu li
+{
+     display: inline-block;
+    list-style-type: none;
 }
