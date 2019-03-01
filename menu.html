@@ -1,8 +1,5 @@
 <!--
-    Opdracht:       -
-    Auteur:         Erwin van der Waal - Jelle van de Westelaken
-    Aanmaakdatum:   -
-    Bestandsnaam:   -
+    MENU HEADER > COPY THE 'header' CLASS AND LINK THE 'menu.css' STYLESHEET IN YOUR HEADER
 -->
 
 <!doctype html>
@@ -12,21 +9,23 @@
             HSV Nederdijk
         </title>
         <link rel="stylesheet" type="text/css" href="style/Stylesheet.css">
-        <meta name="description" content="Template HTML voor opdrachten">
-        <meta name="keywords" content="template, HTML">
+        <link rel="stylesheet" type="text/css" href="style/menu.css">
+        <link rel="stylesheet" type="text/css" href="style/hamburger.css">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
         <meta charset="UTF-8">
     </head>
     <body>
 
         <div class="header">
             <div class="menu-header">
-                <img src="images/HSV_logo_transparent.png" id="logo">
+                <a href="index.html"><img src="images/HSV_logo_transparent.png" id="logo"></a>
                 <ul id="menu">
-                    <li>Home</li>
-                    <li>Team</li>
-                    <li>Nieuws</li>
-                    <li>Loterij</li>
-                    <li>Contact</li>
+                    <li class="menuitem"><a href="index.html">HOME</a></li>
+                    <li class="menuitem"><a href="team.html">TEAM</a></li>
+                    <li class="menuitem"><a href="nieuws.html">NIEUWS</a></li>
+                    <li class="menuitem"><a href="loterij.html">LOTERIJ</a></li>
+                    <li class="menuitem"><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </div>

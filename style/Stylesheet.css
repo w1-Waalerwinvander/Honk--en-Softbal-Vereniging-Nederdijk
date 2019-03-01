@@ -1,31 +1,9 @@
-body
-{
-    color: #343434;
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway.ttf);
+  }
+
+*  {
+    box-sizing: border-box;
 }
 
-#logo
-{
-    height: 100px;
-    width: 100px;
-    margin-left: 50%;
-}
-
-/* Header design */
-header
-{
-    color: #ffc045;
-    height: 100px;
-    width: 100%;
-    display: inline-block;
-}
-
-/* Main Menu Positioning */
-.menu {
-    text-align: center;
-}
-
-.menu li
-{
-     display: inline-block;
-    list-style-type: none;
-}
